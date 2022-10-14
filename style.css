@@ -1,6 +1,13 @@
 body {
-    background-image: url(https://css-tricks.com/wp-content/uploads/2018/11/Untitled_Artwork-scaled.jpg);
+    /* background-image: url(https://css-tricks.com/wp-content/uploads/2018/11/Untitled_Artwork-scaled.jpg); */
     margin: 0;
+    background: #DE6262;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFB88C, #DE6262);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 html {
