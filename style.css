@@ -1,0 +1,144 @@
+body {
+    background-image: url(https://css-tricks.com/wp-content/uploads/2018/11/Untitled_Artwork-scaled.jpg);
+    margin: 0;
+}
+
+html {
+    scroll-padding-top: 14em;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.break {
+    font-size: 25px;
+    padding: 3em;
+    background-color: antiquewhite;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 80px 100px;
+    background-color: antiquewhite;
+}
+
+img {
+    border-radius: 1.5em;
+}
+
+.name {
+    font: 1.5em sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.price {
+    text-align: center;
+    font: 1em sans-serif;
+    font-weight: bold;
+}
+
+.button {
+    text-align: center;
+    align-self: center;
+    cursor: grab;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 90px;
+    border: black solid 2px;
+    border-radius: 7px;
+    padding: 4px 4px;
+    color: antiquewhite;
+    background-color: black;
+}
+
+.button:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-left: 11em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    list-style: none;
+}
+
+nav li :hover {
+    color: white;
+}
+
+nav {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width:746px) {
+    html {
+        scroll-padding-top: 10em;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    nav li {
+        font-size: 1rem;
+        padding-left: 0.7em;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 250px;
+        height: 200px;
+        padding-left: 4em;
+        padding-right: 4em;
+        border-radius: 1.5em;
+    }
+
+    .row {
+        display: block;
+        padding: 80px 0px;
+        background-color: antiquewhite;
+    }
+
+    .button {
+        font-size: 15px;
+        margin-left: 150px;
+        margin-bottom: 2em;
+    }
+
+}
