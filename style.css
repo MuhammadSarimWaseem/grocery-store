@@ -188,17 +188,6 @@ nav {
     button {
         font-size: 12px;
     }
-
-    ul {
-        font-size: 0.5em;
-    }
-
-
-    .parent {
-        width: 350px;
-        margin: 10% auto;
-        margin-top: 100px;
-    }
 }
 
 .parent {
