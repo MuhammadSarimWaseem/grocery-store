@@ -164,7 +164,8 @@ nav {
 
     nav li {
         font-size: 1rem;
-        text-align: center;
+        justify-content: space-between;
+
     }
 
     h1 {
