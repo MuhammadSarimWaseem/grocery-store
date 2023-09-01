@@ -35,6 +35,12 @@ h2 {
 
 img {
     border-radius: 1.5em;
+    transition: transform 0.3s ease;
+
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 .name {
@@ -49,21 +55,23 @@ img {
     font-weight: bold;
 }
 
-.button {
+button {
     text-align: center;
     align-self: center;
     cursor: grab;
     font-size: 18px;
     margin-left: 100px;
     margin-right: 90px;
+    margin-bottom: 19px;
     border: black solid 2px;
     border-radius: 7px;
     padding: 4px 4px;
     color: antiquewhite;
     background-color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button:hover {
+button:hover {
     color: black;
     background-color: whitesmoke;
 }
@@ -72,13 +80,10 @@ h1 {
     text-align: center;
     font-size: 4rem;
     padding: 0.4em 0;
-
-    background: #DE6262;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFB88C, #DE6262);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: gradient 4s linear infinite;
 }
 
 .container {
@@ -107,6 +112,11 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: antiquewhite;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
 }
 
 nav li {
@@ -126,14 +136,21 @@ nav {
     right: 0;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
 @media (max-width:746px) {
     body {
         margin: 0;
         padding: 0;
     }
-
-
-
 
     html {
         scroll-padding-top: 12em;
@@ -167,9 +184,48 @@ nav {
         background-color: antiquewhite;
     }
 
-    .button {
-        font-size: 15px;
+    button {
+        font-size: 12px;
+    }
+
+    ul {
+        font-size: 0.5em;
+    }
+
+
+    .parent {
+        width: 350px;
+        margin: 10% auto;
+        margin-top: 100px;
+    }
+}
+
+.parent {
+    background-color: #FFB88C;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 750px;
+    height: auto;
+    margin: 10% auto;
+    padding-top: 29px;
+}
+
+@media (max-width:746px) {
+    body {
         margin: auto;
+        padding: auto;
+    }
+
+    ul {
+        font-size: 0.5em;
+    }
+
+
+    .parent {
+        width: 350px;
+        margin: 10% auto;
+        margin-top: 100px;
     }
 
 }
