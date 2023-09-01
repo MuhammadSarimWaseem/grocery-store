@@ -108,6 +108,7 @@ nav ul {
     align-items: center;
     text-align: center;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -164,8 +165,6 @@ nav {
 
     nav li {
         font-size: 1rem;
-        justify-content: space-between;
-
     }
 
     h1 {
